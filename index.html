@@ -1,12 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RG-APWV | Research Group on Agricultural and Plantation Waste Valorization</title>
+<meta name="description" content="RG-APWV is a research group advancing knowledge and value-added strategies for agricultural and plantation wastes. Based in Garut, Indonesia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { paper:'#F8FAF7', brand:'#176B45', ink:'#15231D', earth:'#8A6745', leaf:'#72A942' },
+  fontFamily: { head:['"Plus Jakarta Sans"','Inter','sans-serif'], body:['Inter','sans-serif'] }
+}}};
+</script>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph of visible content.</p>
+<body class="bg-paper text-ink font-body antialiased">
+
+<!-- HEADER -->
+<header id="header" class="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <!-- Replace with <img src="assets/logo.svg"> when the logo file is provided -->
+      <span class="w-9 h-9 rounded-full bg-brand text-white grid place-items-center font-head font-bold text-xs">AP</span>
+      <span class="font-head font-extrabold text-brand text-lg leading-none">RG-APWV</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium" id="nav">
+      <a href="#home" class="nav-link">Home</a><a href="#about" class="nav-link">About</a>
+      <a href="#research" class="nav-link">Research</a><a href="#outputs" class="nav-link">Outputs</a>
+      <a href="#people" class="nav-link">People</a><a href="#collaboration" class="nav-link">Collaboration</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden p-2" aria-label="Menu" aria-expanded="false">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h16M3 11h16M3 16h16"/></svg>
+    </button>
+  </div>
+  <nav id="mobileNav" class="hidden md:hidden border-t border-ink/10 px-5 py-3 flex flex-col gap-3 text-sm font-medium bg-paper">
+    <a href="#about">About</a><a href="#research">Research</a><a href="#outputs">Outputs</a><a href="#people">People</a><a href="#collaboration">Collaboration</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-xs tracking-[.2em] font-semibold text-earth uppercase mb-4">Research Group</p>
+      <h1 class="font-head font-extrabold text-4xl lg:text-5xl leading-tight text-ink">Research Group on Agricultural and Plantation Waste Valorization</h1>
+      <p class="mt-5 text-lg text-ink/75 max-w-md">Advancing scientific approaches for the valorization of agricultural and plantation waste.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#research" class="btn bg-brand text-white hover:bg-ink">Explore Our Research &rarr;</a>
+        <a href="#about" class="btn border border-brand text-brand hover:bg-brand hover:text-white">About RG-APWV</a>
+      </div>
+      <!-- Research Group Identity Block -->
+      <div class="mt-10 border-l-4 border-brand bg-white p-5 max-w-md shadow-sm">
+        <p class="text-[11px] tracking-[.2em] uppercase text-earth font-semibold">Research Group</p>
+        <p class="font-head font-extrabold text-2xl text-brand">RG-APWV</p>
+        <p class="text-sm font-medium">Research Group on Agricultural and Plantation Waste Valorization</p>
+        <p class="mt-2 text-sm text-ink/70">Cidatar, Cisurupan, Garut 44163<br>Indonesia &middot; Established 2026</p>
+        <!-- AFFILIATION: fill in only when the client provides it. Remove "hidden" to show. -->
+        <p class="hidden mt-2 pt-2 border-t border-dashed border-ink/20 text-sm text-ink/60">[Department / Institution]<br>[University / Organization]</p>
+      </div>
+    </div>
+    <!-- Visual: drop a photo at assets/hero.jpg (agricultural residue / biomass / lab) -->
+    <div class="hero-visual relative aspect-[4/3] rounded-sm overflow-hidden" role="img" aria-label="Agricultural residue and biomass research visual">
+      <span class="absolute bottom-3 left-3 text-[11px] text-white/80 bg-ink/60 px-2 py-1">Photo: agricultural residue / biomass / laboratory</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-white border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 py-16 grid lg:grid-cols-2 gap-12">
+    <div class="reveal">
+      <h2 class="sec-title">About RG-APWV</h2>
+      <p class="text-ink/80 leading-relaxed">RG-APWV is a research group focused on advancing knowledge and value-added strategies for agricultural and plantation wastes, through biological, chemical, material, energy, and sustainable resource-management approaches.</p>
+      <a href="#" class="inline-block mt-6 text-brand font-semibold hover:underline">Learn More About RG-APWV &rarr;</a>
+    </div>
+    <dl class="reveal grid sm:grid-cols-2 gap-px bg-ink/10 border border-ink/10 self-start">
+      <div class="bg-paper p-5"><dt class="fact">Focus</dt><dd>Agricultural &amp; Plantation Waste Valorization</dd></div>
+      <div class="bg-paper p-5"><dt class="fact">Location</dt><dd>Cidatar Cisurupan Garut, Indonesia</dd></div>
+      <div class="bg-paper p-5"><dt class="fact">Established</dt><dd>26 August 2026</dd></div>
+      <div class="bg-paper p-5"><dt class="fact">Affiliation</dt><dd>Research Group</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- RESEARCH AREAS -->
+<section id="research" class="border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <h2 class="sec-title">Research Areas</h2>
+    <p class="text-ink/70 mb-8">Our research scope includes:</p>
+    <div id="areas" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+  </div>
+</section>
+
+<!-- RESEARCH APPROACH -->
+<section class="bg-ink text-white">
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <h2 class="sec-title !text-white">Research Approach</h2>
+    <p class="text-white/70 mb-10 max-w-xl">From Residue to Value: we transform agricultural and plantation residues through a multi-disciplinary approach.</p>
+    <ol id="approach" class="grid md:grid-cols-4 gap-6"></ol>
+  </div>
+</section>
+
+<!-- OUTPUTS -->
+<section id="outputs" class="border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <h2 class="sec-title">Scientific Outputs</h2>
+    <p class="text-ink/70 mb-8">Our research contributes to knowledge through:</p>
+    <div id="outputList" class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4"></div>
+  </div>
+</section>
+
+<!-- UPDATES -->
+<section id="updates" class="bg-white border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <h2 class="sec-title">Latest Updates</h2>
+    <div id="updateList" class="divide-y divide-ink/10 border-y border-ink/10"></div>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section id="people" class="border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <h2 class="sec-title">Research Group</h2>
+    <div id="peopleWrap" class="space-y-10"></div>
+  </div>
+</section>
+
+<!-- COLLABORATION -->
+<section id="collaboration" class="bg-brand text-white">
+  <div class="max-w-6xl mx-auto px-5 py-16 flex flex-col md:flex-row md:items-center justify-between gap-8">
+    <div class="max-w-xl">
+      <h2 class="font-head font-extrabold text-3xl mb-3">Collaborate With RG-APWV</h2>
+      <p class="text-white/85">We welcome scientific collaboration in manuscript development, literature studies, method development, and experimental research.</p>
+    </div>
+    <!-- TODO: replace with the group's official email -->
+    <a href="mailto:contact@example.org?subject=Research%20Collaboration%20with%20RG-APWV" class="btn border border-white hover:bg-white hover:text-brand shrink-0">Discuss a Research Collaboration &rarr;</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-ink text-white/70 text-sm">
+  <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row gap-4 justify-between">
+    <div><span class="font-head font-bold text-white">RG-APWV</span><br>Research Group on Agricultural and Plantation Waste Valorization</div>
+    <div>Cidatar Cisurupan Garut 44163, Indonesia<br>Established 26 August 2026</div>
+  </div>
+  <p class="text-center text-xs pb-6">&copy; 2026 RG-APWV. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
