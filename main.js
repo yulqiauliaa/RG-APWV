@@ -19,8 +19,6 @@ const outputs = [
 // Only the first item is from the client brief. The rest are placeholders: replace or delete.
 const updates = [
   {date:'26 AUG 2026',tag:'Announcement',title:'RG-APWV Established',text:'RG-APWV was established as a collaborative research group focused on agricultural and plantation waste valorization.'},
-  {date:'—',tag:'Research Update',title:'Literature synthesis (placeholder)',text:'Replace with the group\'s first literature synthesis update.'},
-  {date:'—',tag:'Publication',title:'Article published (placeholder)',text:'Replace with the first published review or research article.'}
 ];
 const people = [
   {group:'Scientific Leadership',cols:'md:grid-cols-2',list:[
