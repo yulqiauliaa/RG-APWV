@@ -15,7 +15,9 @@ const outputs = [
 ];
 // Only the first item is from the client brief. The rest are placeholders: replace or delete.
 const updates = [
-  {date:'07 OCT 2026',tag:'Website Development',title:'RG-APWV Official Website Launched',
+  {date:'26 AUG 2026',tag:'ANNOUNCEMENT',title:'RG-APWV Established',
+    text:'The RG-APWV was established as a collaborative research group focusing on agricultural and plantation waste valorization.'},
+  {date:'07 OCT 2026',tag:'WEBSITE DEVELOPMENT',title:'RG-APWV Official Website Launched',
     text:'The official RG-APWV website has been developed to introduce the research group identity, research focus, scientific activities, and collaborative initiatives in agricultural and plantation waste valorization.'},
 ];
 const people = [
@@ -25,7 +27,7 @@ const people = [
     ['Ade Dimas Kurnia, S.Pt., M.Si.','Deputy Scientific Lead'],
     ['Dea Nurmastin Novianti, S.Bns., MOS','Deputy Scientific Lead']]},
   {group:'Research Member',cols:'md:grid-cols-3',list:[
-    ['Risdiyana','Research Member (Co-Founder)'],['Dede Anissa Khumairoh','Research Member'],['Yulqi Aulia','Research Member & Web Developer']]},
+    ['Risdiyana','Research Member & Co-Founder'],['Dede Anissa Khumairoh','Research Member'],['Yulqi Aulia','Research Member & Web Developer']]},
   {group:'Supporter',cols:'md:grid-cols-2',list:[
     ['Sukayat','Co-Founder, Facilities Provider, and Guardian']]}
 ];
@@ -35,7 +37,7 @@ const $ = s => document.querySelector(s);
 const initials = n => n.replace(/,.*$/,'').split(' ').filter(w=>/^[A-Z]/.test(w)).slice(0,2).map(w=>w[0]).join('');
 
 $('#areas').innerHTML = areas.map((a,i)=>`
-  <div class="card reveal ${i===6?'lg:col-span-2':''}">
+  <div class="card reveal h-full">
     <span class="font-head font-bold text-2xl text-leaf">${String(i+1).padStart(2,'0')}</span>
     <h3 class="mt-3 font-head font-semibold text-ink leading-snug">${a}</h3>
   </div>`).join('');
@@ -48,7 +50,7 @@ $('#approach').innerHTML = approach.map((a,i)=>`
   </li>`).join('');
 
 $('#outputList').innerHTML = outputs.map(o=>`
-  <div class="card reveal border-t-2 border-t-earth">
+  <div class="card reveal h-full border-t-2 border-t-earth">
     <h3 class="font-head font-semibold text-sm uppercase tracking-wide">${o[0]}</h3>
     <p class="text-sm text-ink/70 mt-2">${o[1]}</p>
   </div>`).join('');
