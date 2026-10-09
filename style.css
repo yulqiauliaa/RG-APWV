@@ -7,10 +7,10 @@
 .nav-link:hover,.nav-link.active{color:#176B45}
 .nav-link.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#176B45}
 #header.scrolled{box-shadow:0 2px 12px rgba(21,35,29,.08)}
-/* Hero visual: add assets/hero.jpg to show a photo; gradient + fiber pattern is the fallback */
+/* Hero visual: use the uploaded photo in assets/foto.jpeg; gradient + fiber pattern is the fallback */
 .hero-visual{
   background:
-    url("../assets/hero.jpg") center/cover,
+    url("assets/foto.jpeg") center/cover,
     repeating-linear-gradient(115deg,rgba(138,103,69,.35) 0 2px,transparent 2px 9px),
     repeating-linear-gradient(65deg,rgba(21,35,29,.18) 0 1px,transparent 1px 13px),
     linear-gradient(135deg,#d9c7a6,#8A6745 55%,#176B45);

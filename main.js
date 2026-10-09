@@ -1,11 +1,10 @@
 /* ===== Content data (edit here) ===== */
 const areas = [
-  'Biomass & Lignocellulosic Characterization','Organic Waste Management','Fermentation & Bioprocessing',
-  'Bioenergy & Bioconversion','Biomass-Derived Materials','Feed & Biological Resources','Sustainable Biomass Valorization'
+  'Sustainable Biomass Valorization','Organic Waste Management','Fermentation & Bioprocessing',
+  'Bioenergy & Bioconversion','Biomass-Derived Materials','Feed & Biological Resources'
 ];
 const approach = [
   ['Agricultural & Plantation Residues','Raw residual biomass'],
-  ['Characterization & Analysis','Composition and properties'],
   ['Biological · Chemical · Material · Energy','Conversion pathways'],
   ['Valorization & Sustainable Resources','Value-added products']
 ];
@@ -13,12 +12,11 @@ const outputs = [
   ['Review Articles','Research synthesis and literature reviews'],
   ['Research Articles','Scientific studies and experimental findings'],
   ['Conceptual Frameworks','Research concepts and frameworks'],
-  ['Data & Visualization','Scientific data and visual materials'],
-  ['Experimental Results','Laboratory and field results']
 ];
 // Only the first item is from the client brief. The rest are placeholders: replace or delete.
 const updates = [
-  {date:'26 AUG 2026',tag:'Announcement',title:'RG-APWV Established',text:'RG-APWV was established as a collaborative research group focused on agricultural and plantation waste valorization.'},
+  {date:'07 OCT 2026',tag:'Website Development',title:'RG-APWV Official Website Launched',
+    text:'The official RG-APWV website has been developed to introduce the research group identity, research focus, scientific activities, and collaborative initiatives in agricultural and plantation waste valorization.'},
 ];
 const people = [
   {group:'Scientific Leadership',cols:'md:grid-cols-2',list:[
@@ -26,10 +24,10 @@ const people = [
     ['Muhammad Rafi Ramadhan Taufik, S.T.','Deputy Scientific Lead'],
     ['Ade Dimas Kurnia, S.Pt., M.Si.','Deputy Scientific Lead'],
     ['Dea Nurmastin Novianti, S.Bns., MOS','Deputy Scientific Lead']]},
-  {group:'Research Members',cols:'md:grid-cols-3',list:[
-    ['Risdiyana','Research Member'],['Dede Anissa Khumairoh','Research Member'],['Yulqi Aulia','Research Member (Admin)']]},
-  {group:'Founding Supporter',cols:'md:grid-cols-2',list:[
-    ['Sukayat','Founding Supporter, Facilities Provider, and Guardian']]}
+  {group:'Research Member',cols:'md:grid-cols-3',list:[
+    ['Risdiyana','Research Member (Co-Founder)'],['Dede Anissa Khumairoh','Research Member'],['Yulqi Aulia','Research Member & Web Developer']]},
+  {group:'Supporter',cols:'md:grid-cols-2',list:[
+    ['Sukayat','Co-Founder, Facilities Provider, and Guardian']]}
 ];
 
 /* ===== Render ===== */
