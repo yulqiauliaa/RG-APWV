@@ -26,8 +26,8 @@ const people = [
     ['Muhammad Rafi Ramadhan Taufik, S.T.','Deputy Scientific Lead'],
     ['Ade Dimas Kurnia, S.Pt., M.Si.','Deputy Scientific Lead'],
     ['Dea Nurmastin Novianti, S.Bns., MOS','Deputy Scientific Lead']]},
-  {group:'Research Member',cols:'md:grid-cols-3',list:[
-    ['Risdiyana','Research Member & Co-Founder'],['Dede Anissa Khumairoh','Research Member'],['Yulqi Aulia','Research Member & Web Developer']]},
+  {group:'Research Member',cols:'md:grid-cols-2',list:[
+    ['Risdiyana','Research Member & Co-Founder'],['Yulqi Aulia','Research Member & Web Developer']]},
   {group:'Supporter',cols:'md:grid-cols-2',list:[
     ['Sukayat','Co-Founder, Facilities Provider, and Guardian']]}
 ];
